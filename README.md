@@ -26,7 +26,7 @@ The fruits.h5 file is pre-trained in the images from the [Fruits fresh and rotte
 
 You can then train the model by using the train.py file
 ```
-python train_model.py --dataset dataset
+python train_model.py --dataset dataset --model fruits.h5
 ```
 ![alt text](https://github.com/siddhesh1598/Freshness_Detection_Of_Fruits/blob/master/plot.png?raw=true)
 
@@ -36,17 +36,13 @@ The plot for Training and Validation Loss and Accuracy.
 
 To test the model, use the test_model.py file. 
 ```
-python test_model.py
+python test_model.py --model fruits.h5 --labelbin lb.pickle --image test/freshApple_1.png
 ```
 
-You can pass some optional parameters for the main.py file:
-1. --face: path to face detector model directory <br>
-          *default: face_detector*
-2. --model: path to trained face mask detector model <br>
-          *default: maskNet.model*
-3. --confidence: minimum probability to filter weak detections <br>
-          *default: 0.35*
-
+You need to pass some parameters for the test_model.py file:
+1. --model: path to trained model <br>
+2. --labelbin: path to label binarizer <br>
+3. --image: path to input image <br>
 
 
 ## Authors
@@ -56,5 +52,4 @@ You can pass some optional parameters for the main.py file:
 
 ## Acknowledgments
 
-* Dataset: [Medical-Mask-Dataset](https://www.kaggle.com/vtech6/medical-masks-dataset) <br>
-Dataset by **Eden Social Welfare Foundation, Taiwan**. (Re-uploaded by [Mikolaj Witkowski](https://www.kaggle.com/vtech6))
+* Dataset: [Fruits fresh and rotten for classification](https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification) <br>
