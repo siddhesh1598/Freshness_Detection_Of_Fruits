@@ -1,5 +1,7 @@
 # Freshness_Detection_Of_Fruits
 
+![alt text](https://github.com/siddhesh1598/Freshness_Detection_Of_Fruits/blob/master/thumbnail.jpg?raw=true)
+
 Detecting freshness of fruits like apples, oranges and bananas. The dataset is taken from [Fruits fresh and rotten for classification](https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification). The dataset containes ~2700 images of fresh and rotten fruits for classification. The code uses VGG16 model for transfer learning to classify the fruit images as fresh or rotten. 
 
 
